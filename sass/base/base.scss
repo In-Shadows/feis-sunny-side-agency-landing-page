@@ -1,0 +1,59 @@
+:root {
+  //PRIMARY COLORS
+  --color-soft-red: #fe7867;
+  --color-yellow: #fad400;
+  --color-dark-desaturated-cyan: #25564b; //graphic design text
+  --color-dark-blue: #19536b; // photography text
+  --color-dark-moderate-cyan: #458c7e; // footer
+
+  //NEUTRAL COLORS
+  --color-very-dark-desaturated-blue: #23303e;
+  --color-very-dark-grayish-blue: #5a636c;
+  --color-dark-grayish-blue: #818498;
+  --color-grayish-blue: #a7abae;
+  --color-white: #fff;
+}
+//FONT SASS VARIABLES
+$font-barlow: "Barlow", sans-serif; // 600
+$font-fraunces: "Fraunces", sans-serif; // 700, 900
+
+//BREAKPOINTS
+$bp-largest: 65.625em; // 1050px
+$bp-large: 56.25em; // 900px
+$bp-medium: 51.25em; // 820px
+$bp-small: 43.75em; // 700px
+$bp-smallest: 28.125em; // 450px
+
+//ADVANCED GLOBAL RESET
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-barlow;
+}
+
+//HIDDEN CLASS
+.hidden {
+  display: none !important;
+}
+
+//SCSS MIXINS
+@mixin gridImage {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
